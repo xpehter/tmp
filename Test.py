@@ -14,3 +14,5 @@ exec_command = subprocess.Popen(command, stdout=subprocess.PIPE)
 
 for line in iter(exec_command.stdout.readline(), b''):
     print(">>> " + line.rstrip())
+
+print('Test')
